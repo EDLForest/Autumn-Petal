@@ -1,0 +1,42 @@
+*{
+      margin: 0px;
+      padding: 0px;
+}
+html, body{
+      height: 100%;
+}
+body{
+      background: url(http://www.hdwallpaperspulse.com/wp-content/uploads/2014/02/21/67651.jpeg) no-repeat center center;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+}
+.container{
+      max-width: 600px;
+      margin: 0px auto;
+      text-align: center;
+}
+h1{
+      color: #ffffff;
+      font: 900 96px 'Dancing Script', cursive;
+      text-shadow: 0px 2px 4px rgba(0,0,0,.9);
+}
+.button{
+      background: linear-gradient(45deg, rgba(250,182,173,1) 0%, rgba(245,113,101,0.86) 48%, rgba(245,135,130,0.71) 100%);
+      border-radius: 10px;
+      padding: 20px 48px;
+      color: #FFFFFF;
+      font-size: 20px  'Dancing Script', cursive;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-shadow: 0px 2px 4px rgba(0,0,0,.9);
+      transition: box-shadow 1s ease;
+}
+.button:hover{
+      background: linear-gradient(45deg, rgba(250,182,173,1) 0%, rgba(245,113,101,0.97) 25%, rgba(247,68,62,0.86) 100%);
+      box-shadow: 0px 8px 8px rgba(0,0,0,0.7);
+      -webkit-transition: box-shadow 1s ease;
+      transition: box-shadow 1s ease;
+}

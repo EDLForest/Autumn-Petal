@@ -1,0 +1,104 @@
+div.content{
+      display: block;
+      background: #fcd29c;
+      opacity: .9;
+      border-width: 2px;
+      border-color: white;
+      border-style: solid;
+      border-radius: 5px;
+      min-width: 1000px;
+      width: 1245px;
+      margin-top: 100px;
+      /*margin-left: 250px;
+      margin-right: 250px;*/
+      margin: 0 auto;
+      /*position: absolute;*/
+      white-space: nowrap;
+      height: 1300px;
+}
+
+div.header2{
+      /*background: linear-gradient(to right, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 14%, rgba(246,41,12,1) 46%, rgba(240,47,23,1) 63%, rgba(231,56,39,1) 100%);*/
+      background: linear-gradient(to right, rgba(235,107,71,0.6) 0%, rgba(255,47,10,1) 50%, rgba(235,107,71,0.6) 100%);
+      color: white;
+      padding: 0px 0px 15px 0px;
+      font-size: 15px;
+      height: 50px;
+      opacity: .90;
+      text-align: center;
+      width: 1200px;
+      /*margin-bottom: 10px;*/
+      margin: 20px 20px 0px 20px;
+      display: inline-block;
+      border-radius: 10px;
+      float: left;
+      -webkit-box-shadow: 10px 10px 5px 0px rgba(250,158,158,1);
+      -moz-box-shadow: 10px 10px 5px 0px rgba(250,158,158,1);
+      box-shadow: 5px 5px 3px 0px rgba(158,40,40,1);
+}
+
+.article{
+      border-top: 1px solid;
+      border-color: #ff2e00;
+      padding: 10px 0px 10px 40px;
+      float: left;
+      margin-left: 30px;
+      width: 1125px;
+      height: 60px;
+      display: inline;
+}
+
+.subject{
+      margin: 0;
+      width: 509px;
+      padding: 0;
+      border: none;
+      float: left;
+      text-shadow: 0 1px 0 #fcd5ff;
+      font-weight: 800;
+      font-size: 25px;
+      font-family: 'Arvo', serif;
+}
+.subject a{
+      text-decoration: none;
+      /*color: #db4a23;*/
+      color: #ff2e00;
+}
+.date{
+      display: inline;
+      padding: 0 7px;
+      float: right;
+      margin-right: 40px;
+      top: 1px;
+      position: relative;
+      background: #ecfff8;
+      font-weight: 900;
+      color: #ff5400;
+      box-shadow:  0 1px 3px #ff5400 inset, 0 0 0 1px #fff;
+}
+
+.teaser{
+      font-weight: bold;
+      width: 90%;
+      padding-left: 0px;
+      padding: 15px;
+      display: inline;
+      float: left;
+      color : #f74109;
+      font-size : 18px;
+
+}
+a .more{
+      display: inline;
+      position: relative;
+}
+.teaser a {
+      text-decoration: none;
+      color : #a51e00;
+      font-size: 14px;
+      font-family: 'Crimson Text', serif;
+      font-weight: bold;
+}
+.more:hover{
+      color: red;
+}
