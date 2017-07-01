@@ -1,87 +1,132 @@
 body{
+    display: flex;
+    flex-direction: column;
       margin: 0;
-      background-image: url(http://cdn.wallpapersafari.com/14/30/aIzfij.jpg) ;
+      background-image: url(http://cdn.wallpapersafari.com/14/30/aIzfij.jpg);
       background-attachment: fixed;
       width: 100%;
       height: 100%;
+    min-width: 830px;
       background-repeat: no-repeat;
       background-size: cover;
       margin: 0;
       padding: 0;
-      min-width: 1100px;
 }
+
+.mainContent {
+    margin-bottom: 40px;
+}
+
 header{
+    display: flex;
+    flex-direction: row;
       /*background: linear-gradient(to right, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 14%, rgba(246,41,12,1) 46%, rgba(240,47,23,1) 63%, rgba(231,56,39,1) 100%);*/
       background: linear-gradient(45deg, rgba(241,111,92,1) 0%, rgba(255,30,0,1) 0%, rgba(248,80,50,0.99) 8%, rgba(237,40,19,0.9) 70%, rgba(231,56,39,0.86) 100%);
       color: white;
       height: 40px;
-      opacity: .85;
+      opacity: 1;
 }
 
-header h1{
-      display: inline;
+.title {
+    width: auto;
+    margin-right: 10px;
+    padding-left: 20px;
+    text-decoration: none;
+    color: white
+}
+
+
+.title h1{
       font-family: 'Satisfy', cursive;
+    text-decoration:none;
       font-weight: 400;
-      font-size: 32px;
-      float: left;
+      font-size: 1.96em;
       margin-top: 0px;
       margin-bottom: 0px;
-      margin-right: 10px;
-      padding-left: 20px;
-      padding-right: 20px;
 }
-nav{
-      position: relative;
+
+.signinButtons {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+.signinButtons a{
+    margin-right: auto;
+}
+
+.headerNav{
+      display: flex;
       z-index: 100;
 }
-nav ul{
-      display: inline;
-      float: left;
+/*
+.headerNav #navItem{
+}*/
+
+.navMenu{
+    display: flex;
+    justify-content: space-around;
       padding: 0px;
       margin: 0px;
 }
 
-nav ul li{
+.navMenuItem{
       display: inline-block;
+    position: relative;
       list-style-type: none;
       color: white;
-      float: left;
       height: 40px;
-      width: 170px;
+      min-width: 130px;
+    max-width: 200px;
       opacity: .9;
+    flex: 1;
+    padding: none;
+    margin: 0 2px;
       line-height: 40px;
       text-align: center;
       font-size: 20px;
 }
 
-nav ul li a{
+.navMenuItem a{
       color: white;
       text-decoration: none;
       display: block;
+    text-align: center;
+    margin: none;
+    padding: none;
 }
 
-ul li a:hover{
+.navMenuItem a:hover{
       background: linear-gradient(45deg, rgba(254,182,69,1) 0%, rgba(241,231,103,0.9) 100%);
       color: #ce2c00;
-      position: relative;
       z-index: 100;
 }
 
-nav ul li ul li{
-      display:  none;
+.dropdown{
+    display: none;
+    position: absolute;
+    list-style: none;
+    text-align: center;
+    font-size: .85em;
+    padding-left: 0px;
+    width: 100%;
+    line-height: 1.8em;
+    opacity: 1;
+    
+    background: linear-gradient(135deg, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 0%, rgba(240,47,23,1) 83%, rgba(246,41,12,1) 92%, rgba(231,56,39,1) 100%);
 }
 
-nav ul li:hover ul li{
+
+.navMenuItem:hover .dropdown{
       display: block;
-      background: linear-gradient(135deg, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 0%, rgba(240,47,23,0.91) 83%, rgba(246,41,12,0.9) 92%, rgba(231,56,39,0.89) 100%);
-      border-bottom: 1px;
-      border-top: 0px;
-      border-style: solid;
-      border-color: #afafaf;
-      color: red;
-      position: relative;
-      z-index: 100;
 }
+
+.dropdown li:hover {
+      box-shadow: 0px 0px 6px 4px #bc2800;
+    transition: 0.5s;
+}
+
 #nav{
       font-family: 'Tinos', serif;
 }
@@ -91,39 +136,136 @@ nav ul li:hover ul li{
       z-index: -1;
 }
 
-div.nav2{
+.banner {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    min-width: 830px;
+}
+
+.downloadButtons {
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    margin-right: 10px;
+}
+
+.downloadButtons div {
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    background: linear-gradient(to right, rgba(245,208,59,1) 0%, rgba(240,213,170,1) 50%, rgba(245,208,59,1) 100%);
+      width: auto;
+      padding: 5px 15px;
+    border-style: solid;
+    border-color: #ffd154;
+      box-shadow:0px 5px 6px 0 #434343;
+      z-index: 100;
+      transition: box-shadow .4s; 
+}
+
+.downloadButtons .image{
+   position:relative;
+   top: 10px;
+   right: 10px;
+
+   width:50px;
+   height:50px;
+}
+
+
+.buttonText{
+      text-decoration: none;
+      color: #ba0d0d;
+      font-family: 'Satisfy', cursive;
+      font-size: 34px;
+      font-weight: 600;
+    padding-top: 15px;
+}
+
+.downloadButtons div:hover {
+      background: linear-gradient(to right, rgba(241,231,103,1) 0%, rgba(255,216,158,1) 50%, rgba(241,231,103,1) 100%);
+      box-shadow: 0px 3px 30px 10px #fff356;
+}
+
+.nav2{
       background: linear-gradient(45deg, rgba(241,111,92,1) 0%, rgba(255,30,0,1) 0%, rgba(248,80,50,0.99) 8%, rgba(237,40,19,0.9) 70%, rgba(231,56,39,0.86) 100%);
-      padding: 0px 0px 6px 4px;
-      height: 35px;
-      opacity: .90;
-      width: 1098px;
-      min-width: 600 px;
-      margin-top: 28px;
-      margin-right: 0px;
-      display: inline-block;
-      border-radius: 10px;
-      border-top-right-radius: 0px;
-      border-bottom-right-radius: 0px;
-      padding-left: 30px;
-      float: left;
-      position: relative;
-      z-index: 10;
+    width: 80%;
+    height: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+      opacity: 0.90;
+      border-radius: 15px;
+      z-index: 100;
       -webkit-box-shadow: 10px 10px 5px 0px rgba(250,158,158,1);
       -moz-box-shadow: 10px 10px 5px 0px rgba(250,158,158,1);
       box-shadow: 5px 5px 3px 0px rgba(158,40,40,1);
 }
 
+.subNav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+.subNav li{
+    flex: 1;
+    text-align: center;
+    font-size: 1.3em;
+    max-width: 150px;
+    /*
+    padding-left: 10px;
+    padding-right: 10px;*/
+}
+
+.subNav li a {
+    text-decoration: none;
+    display: block;
+    border-radius: 15px;
+    color: antiquewhite;
+}
+
+.subNav li a:hover{
+    color: crimson;
+    background: linear-gradient(to right, rgba(245,208,59,1) 0%, rgba(240,213,170,1) 50%, rgba(245,208,59,1) 100%);
+    box-shadow: 0 0 6px 4px #f2bd00;
+    
+    transition: box-shadow 0.4s;
+}
+
 div.container{
       display: block;
-      min-width: 1500px;
-      max-width: 1500px;
-      width: 100%;
-      height: 96px;
-      /*margin-left: 120px;
-      margin-right: 120px;*/
-      margin: 0 auto;
+      
       border-radius: 10px;
-      padding-left: 30px;
       /*position: absolute;*/
       white-space: nowrap;
+}
+
+
+
+
+@media (min-width: 1150px){
+    .nav2{
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 986px){
+    .buttonText{
+        font-size: 1.8em;
+    }
+    
+    .downloadButtons .image{
+           top: 10px;
+           right: 10px;
+
+           width:40px;
+           height:40px;
+    }
 }

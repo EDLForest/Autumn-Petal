@@ -3,20 +3,21 @@ img{
       max-height: 100%;
 }
 div.content3{
-      display: block;
+      display: flex;
       /*background: #fcd29c;*/
-      background: linear-gradient(45deg, rgba(255,175,75,1) 0%, rgba(255,104,10,0.89) 100%);
-      opacity: .9;
+      background: linear-gradient(45deg, rgba(255,175,75,0.85) 0%, rgba(255,104,10,0.85) 100%);
+      opacity: .95 ;
       border-style: 2px solid none;
       border-radius: 15px;
-      min-width: 1000px;
-      width: 1245px;
-      margin-top: 99px;
-      height: 1250px;
+      min-width: 800px;
+    max-width: 1150px;
+      width: 90%;
+      margin-top: 100px;
+      height: auto;
       /*margin-left: 250px;
-      margin-right: 1250px;*/
+      margin-right: 250px;
+      position: absolute;*/
       margin: 0 auto;
-      /*position: absolute;*/
       white-space: nowrap;
       box-shadow: 10px 10px 25px 3px rgba(135,33,10,1);
 }
@@ -25,22 +26,24 @@ div.item_tab{
       opacity: inherit;
       border-color: #f71616;
       min-width: 160px;
-      margin: 10px 10px 0px 10px;
+    width: 85%;
+      margin: 0 auto;
+    margin-top: -10px;
       text-align: center;
 }
 div.side_tab3{
-      display: block;
+      display: inline-block;
       /*background: #ffddc6;*/
       background: linear-gradient(45deg, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 42%, rgba(255,187,15,1) 100%);
       opacity: inherit;
       box-shadow: 5px 5px 8px 1px rgba(150,38,38,1);
       border-radius: 6px 6px 6px 6px;
-      min-width: 200px;
-      width: 200px;
-      height: 600px;
+      min-width: 140
+      height: auto;
       margin: 20px 10px 20px 30px;
+    padding: 10px; 
+    padding-bottom: 25px;
       text-align: center;
-      float: left;
 }
 
 .item_tab_elements{
@@ -48,7 +51,7 @@ div.side_tab3{
       background: white;
       opacity: inherit;
       border-radius: 5px;
-      min-width: 160px;
+      width: auto;
       margin: 0px 10px 0px 10px;
       font-size: 16px;
       line-height: 24px;
@@ -58,50 +61,61 @@ div.side_tab3{
 .item_tab_elements:hover{
       border-color: orange;
 }
+
+.item_tab_elements ul{
+    padding-left: 0px;
+    margin-left: 15px;
+}
+
 .item_tab_elements ul li{
       text-align: left;
       list-style-type: none;
 }
+
 .item_tab_elements ul li a{
       text-decoration: none;
       color: brown;
 }
-.content3 .side_tab3 .item_tab_elements ul li a:hover{
+
+.item_tab_elements ul li a:hover{
       color: red;
       background: white;
 }
 .item_content{
-      display: block;
+      display: flex;
+    flex-direction:column;
       /*background: #ffddc6;*/
       background: linear-gradient(45deg, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 42%, rgba(255,187,15,1) 100%);
       opacity: inherit;
       box-shadow: 5px 5px 8px 1px rgba(150,38,38,1);
       border-radius: 10px;
-      min-width: 600px;
-      height: 1200px;
-      margin: 20px 10px 20px 70px;
+    flex: 4;
+      height: auto;
+      margin: 20px 30px 20px 20px;
       text-align: center;
-      float: left;
 }
 
-
 .header_item{
-      float: left;
-      margin: 20px 0px 20px 20px;
+    align-content: cross-start;
+      margin: 20px;
+    margin-right: auto;
       background: white;
       border-radius: 4px;
       padding: 10px 40px 10px 40px;
 }
 
+
 .item_content_container{
-      display: block;
+      display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
       background: white;
       opacity: inherit;
       border-radius: 10px;
-      min-width: 800px;
-      width: 700px;
-      height: 1050px;
+      width: 90%px;
+      height: auto;
       margin: 0px 20px 20px 20px;
+    padding-bottom: 20px;
       float: left;
       border: transparent solid 2px;
       transition : border-color 0.5s;
@@ -120,13 +134,13 @@ div.side_tab3{
       border-width: 1px;
       width: 160px;
       height: 145px;
-      margin: 20px 0px 0px 30px;
+      margin: 20px 7px 10px 7px;
       float: left;
       transition: box-shadow 1s ease;
 }
 .item_content_list:hover{
       border-color:#fcb3b3;
-      box-shadow: 3px 9px 113px 0px  rgba(0,62,247,1);
+      box-shadow: 3px 9px 113px 4px  rgba(0,62,247,1);
 }
 .item_img{
       display: block;
@@ -169,33 +183,32 @@ div.side_tab3{
       color: white;
 }
 
-div .description{
+.description{
       padding-top: 10px;
       color: brown;
       font-weight: bold;
 }
 #footer{
-      display: block;
+      display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-between;
       height: 96px;
       /*margin-left: 320px;
       margin-right: 150px;*/
       margin: 0 auto;
-      margin-top: 30px;
-      min-width: 1100px;
-      max-width: 1200px;
-      height: 50px;
-      border-radius: 10px;
-      /*position: absolute;*/
+      margin-top: auto;
+    width: 100%;
+      height: auto;
       white-space: nowrap;
-      background: linear-gradient(45deg, rgba(241,111,92,1) 0%, rgba(255,30,0,1) 0%, rgba(248,80,50,0.99) 8%, rgba(237,40,19,0.9) 70%, rgba(231,56,39,0.86) 100%);
-      -webkit-box-shadow: 10px 10px 5px 0px rgba(250,158,158,1);
+      
       -moz-box-shadow: 10px 10px 5px 0px rgba(250,158,158,1);
       box-shadow: 5px 5px 3px 0px rgba(158,40,40,1);
 }
-div #footer-menu{
-      margin-top: 13px;
-      margin-left: 10px;
+#footer-menu{
+      
       padding: 5px;
+    padding-bottom: 0px;
       float: left;
       display: inline-block;
       background: linear-gradient(45deg, rgba(255,175,75,1) 0%, rgba(255,175,75,1) 55%, rgba(255,146,10,1) 100%);
@@ -214,7 +227,7 @@ div #footer-menu{
       float: left;
       font-family: 'Dancing Script', cursive;
       font-size: 28px;
-      color: white;
+      color: #822d00;
 }
 
 .footer-m{
@@ -223,20 +236,19 @@ div #footer-menu{
       border-color: brown;
 }
 
-div #footer-social{
-      width: 150px;
-      height: 40px;
-      margin-left: 30px;
-      float: left;
-
+#footer-social{
+    height: auto;
+    margin-right: 10px;
 }
 #footer-social ul{
       display: flex;
       text-align: center;
+    width: auto;
+    padding-left: 0px;
 }
 #footer-social ul li{
       background: #000;
-      margin: 1px;
+      margin: 2px;
       list-style: none;
       font-size: 24px;
       transition: .5s;
@@ -264,9 +276,8 @@ div #footer-social{
 }
 
 .copyright{
-      /*margin-left: 800px;*/
-      text-align: center;
+      display: block;
       color: black;
       margin-top: 15px;
-      display: block;
+      text-align: center;
 }
