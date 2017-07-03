@@ -2,12 +2,18 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin: 0 auto;
       margin-top: auto;
+    padding-top: 15px;
       width: 100%;
     align-items: center;
     justify-content: space-between;
       /*position: absolute;*/
-     
+    /*max-width: 1150px;*/
+    
+    
+     background: linear-gradient(45deg, rgba(241,111,92,1) 0%, rgba(255,30,0,1) 0%, rgba(248,80,50,0.99) 8%, rgba(237,40,19,0.9) 70%, rgba(231,56,39,0.86) 100%);
+    
       -webkit-box-shadow: 10px 10px 5px 0px rgba(250,158,158,1);
       -moz-box-shadow: 10px 10px 5px 0px rgba(250,158,158,1);
       box-shadow: 5px 5px 3px 0px rgba(158,40,40,1);
@@ -19,8 +25,9 @@
     margin-bottom: 10px;
       display: inline-block;
       background: linear-gradient(45deg, rgba(255,175,75,1) 0%, rgba(255,175,75,1) 55%, rgba(255,146,10,1) 100%);
+    border: solid 2px brown;
       border-radius: 5px;
-      box-shadow:  0 3px 5px #ff5400 inset, 0 0 0 1px #ea4646;
+      box-shadow:  0 0 16px 4px #ff5400 , 0 0 0 1px #ea4646;
 }
 
 #footer a{
@@ -33,8 +40,8 @@
       padding: 5px 20px 5px 20px;
       text-align: center;
       font-family: 'Dancing Script', cursive;
-      font-size: 28px;
-      color: #822d00;
+      font-size: 2em;
+      color: #f7bf3d;
 }
 
 .footer-m{
@@ -96,22 +103,25 @@
 }
 
 @media (min-width: 1120px){
-    .copyright{
-        width: 100vw;
-    }
-
-    #footer-menu{
-        margin-left: auto;
-        margin-right: auto;
-            
-    }
-
-    #footer-social{
-        margin-right: 10px;
-}
-
-    #footer .logo{
-        margin-right: auto;
+    
+    #footer{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0 auto;
+        
+        background: 
     }
     
+    .copyright{
+        width: 100vw;
+        background: transparent;
+    }
+
+    
+    #footer-social{
+        padding-left: 20px;
+    }
+
 }
+

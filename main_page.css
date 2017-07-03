@@ -125,6 +125,7 @@ header{
 .dropdown li:hover {
       box-shadow: 0px 0px 6px 4px #bc2800;
     transition: 0.5s;
+    
 }
 
 #nav{
@@ -197,7 +198,7 @@ header{
     max-width: 1200px;
     margin: 0 auto;
       opacity: 0.90;
-      border-radius: 15px;
+      border-radius: 5px;
       z-index: 100;
       -webkit-box-shadow: 10px 10px 5px 0px rgba(250,158,158,1);
       -moz-box-shadow: 10px 10px 5px 0px rgba(250,158,158,1);
@@ -227,7 +228,7 @@ header{
 .subNav li a {
     text-decoration: none;
     display: block;
-    border-radius: 15px;
+    border-radius: 5px;
     color: antiquewhite;
 }
 
