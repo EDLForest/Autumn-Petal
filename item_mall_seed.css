@@ -132,6 +132,7 @@ div.side_tab3{
 
 .item_content_list{
       display: block;
+    position: relative;
       background: inherit;
       border-color: brown;
       border-style: solid;
@@ -196,4 +197,31 @@ div.side_tab3{
       text-decoration: none;
       color: white;
 }
+
+/*------- used by Jquery -------*/
+
+.information {
+    background: rgba(0,0,0,0.87);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: -110%;
+    padding-left: 5px;
+    box-shadow: 0 0 5px 2px #000;
+    
+    display: none;
+    transition: position 1s;
+}
+
+.information ul {
+    list-style: none;
+    padding-left: 0;
+    color: white;
+    text-align: left;
+}
+
+
+
+
 
