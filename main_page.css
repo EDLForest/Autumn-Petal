@@ -50,10 +50,14 @@ header{
     justify-content: flex-end;
     margin-left: auto;
     margin-right: 5px;
+
 }
 
 .signinButtons a{
     margin-right: auto;
+}
+.button1, .button2{
+        transition: all 0.3s;
 }
 
 .headerNav{
@@ -95,6 +99,7 @@ header{
     text-align: center;
     margin: none;
     padding: none;
+    transition: all 0.3s;
 }
 
 .navMenuItem a:hover{
@@ -113,7 +118,7 @@ header{
     width: 100%;
     line-height: 1.8em;
     opacity: 1;
-    
+
     background: linear-gradient(135deg, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 0%, rgba(240,47,23,1) 83%, rgba(246,41,12,1) 92%, rgba(231,56,39,1) 100%);
 }
 
@@ -125,7 +130,7 @@ header{
 .dropdown li:hover {
       box-shadow: 0px 0px 6px 4px #bc2800;
     transition: 0.5s;
-    
+
 }
 
 #nav{
@@ -164,7 +169,7 @@ header{
     border-color: #ffd154;
       box-shadow:0px 5px 6px 0 #434343;
       z-index: 100;
-      transition: box-shadow .4s; 
+      transition: box-shadow .4s;
 }
 
 .downloadButtons .image{
@@ -236,13 +241,13 @@ header{
     color: crimson;
     background: linear-gradient(to right, rgba(245,208,59,1) 0%, rgba(240,213,170,1) 50%, rgba(245,208,59,1) 100%);
     box-shadow: 0 0 6px 4px #f2bd00;
-    
+
     transition: box-shadow 0.4s;
 }
 
 div.container{
       display: block;
-      
+
       border-radius: 10px;
       /*position: absolute;*/
       white-space: nowrap;
@@ -261,7 +266,7 @@ div.container{
     .buttonText{
         font-size: 1.8em;
     }
-    
+
     .downloadButtons .image{
            top: 10px;
            right: 10px;
